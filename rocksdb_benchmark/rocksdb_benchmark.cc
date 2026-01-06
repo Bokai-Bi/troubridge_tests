@@ -40,14 +40,14 @@ ABSL_FLAG(int32_t, num_threads, 5,
           "Number of worker threads for the benchmark.");
 ABSL_FLAG(int64_t, ops_per_thread, 100000,
           "Number of operations per thread (used when duration_secs=0).");
-ABSL_FLAG(int32_t, batch_size, 1,
+ABSL_FLAG(int32_t, batch_size, 10,
           "Number of operations per batch write (1 = no batching).");
 
 // Workload flags
-ABSL_FLAG(int32_t, read_percent, 50,
+ABSL_FLAG(int32_t, read_percent, 30,
           "Percentage of read operations (0-100). Rest are writes.");
 ABSL_FLAG(int32_t, key_size, 16, "Size of keys in bytes.");
-ABSL_FLAG(int32_t, value_size, 100, "Size of values in bytes.");
+ABSL_FLAG(int32_t, value_size, 1024, "Size of values in bytes.");
 ABSL_FLAG(int64_t, num_keys, 500000,
           "Total number of unique keys in the key space.");
 
