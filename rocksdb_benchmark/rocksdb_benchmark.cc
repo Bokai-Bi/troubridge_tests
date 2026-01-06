@@ -47,7 +47,7 @@ ABSL_FLAG(int32_t, batch_size, 1,
 ABSL_FLAG(int32_t, read_percent, 50,
           "Percentage of read operations (0-100). Rest are writes.");
 ABSL_FLAG(int32_t, key_size, 16, "Size of keys in bytes.");
-ABSL_FLAG(int32_t, value_size, 1536, "Size of values in bytes.");
+ABSL_FLAG(int32_t, value_size, 512, "Size of values in bytes.");
 ABSL_FLAG(int64_t, num_keys, 50000,
           "Total number of unique keys in the key space.");
 
